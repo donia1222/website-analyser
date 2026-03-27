@@ -6,6 +6,7 @@ import Link from 'next/link';
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
+  
   useEffect(() => {
     if (!localStorage.getItem('cookie_consent')) {
       setVisible(true);
